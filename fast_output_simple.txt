@@ -1,0 +1,19 @@
+Users count: 
+user_47 : 4590710
+user_22 : 4590345
+user_2 : 4589665
+user_25 : 4589377
+user_29 : 4588839
+user_41 : 4588356
+user_32 : 4587750
+user_33 : 4587638
+user_42 : 4587623
+user_35 : 4587515
+
+Average response time per action: 
+DELETE : 500.51528979096815
+GET : 500.5083301547216
+POST : 500.48191205907216
+PUT : 500.46730246103886
+
+ N of unique ip address 1000
