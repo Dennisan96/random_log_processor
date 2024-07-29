@@ -1,3 +1,9 @@
+"""
+Fastest way: concurrent processing of multiple files with multiple threads reading chunks of the file.50 secs for 20 log files.
+
+When using mmap way, the memory is about 18gb peaks
+"""
+
 from slow_log_processor import LOG_FILE_PATH
 import collections
 import concurrent.futures
@@ -22,11 +28,6 @@ import pstats
 
 N_CHUNKS = 36
 time_acc = TimeAccumulator()
-
-"""
-Fastest way: concurrent processing of multiple files with multiple threads reading chunks of the file.50 secs for 20 log files.
-"""
-
 
 def process_one_file(file_name):
     print(f"Processing file {file_name}")
